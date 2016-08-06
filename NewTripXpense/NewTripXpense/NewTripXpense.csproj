@@ -49,14 +49,48 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MainActivity.cs" />
+    <Compile Include="..\NewTripXpense.Core\BusinessLogic\TripManager.cs">
+      <Link>BusinessLogic\TripManager.cs</Link>
+    </Compile>
+    <Compile Include="..\NewTripXpense.Core\DataLayer\TripXmlDatabase.cs">
+      <Link>DataLayer\TripXmlDatabase.cs</Link>
+    </Compile>
+    <Compile Include="..\NewTripXpense.Core\Model\EntityBase.cs">
+      <Link>Model\EntityBase.cs</Link>
+    </Compile>
+    <Compile Include="..\NewTripXpense.Core\Model\Expense.cs">
+      <Link>Model\Expense.cs</Link>
+    </Compile>
+    <Compile Include="..\NewTripXpense.Core\Model\IUniqueEntity.cs">
+      <Link>Model\IUniqueEntity.cs</Link>
+    </Compile>
+    <Compile Include="..\NewTripXpense.Core\Model\Trip.cs">
+      <Link>Model\Trip.cs</Link>
+    </Compile>
+    <Compile Include="..\NewTripXpense.Core\Repository\ITripRepository.cs">
+      <Link>Repository\ITripRepository.cs</Link>
+    </Compile>
+    <Compile Include="..\NewTripXpense.Core\Repository\TripXmlRepository.cs">
+      <Link>Repository\TripXmlRepository.cs</Link>
+    </Compile>
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Screens\Home\HomeScreen.cs" />
+    <Compile Include="Screens\Home\HomeTripsListAdapter.cs" />
+    <Compile Include="Screens\TripDetail\EditExpenseScreen.cs" />
+    <Compile Include="Screens\TripDetail\ViewTripDetailExpenseListAdapter.cs" />
+    <Compile Include="Screens\TripDetail\ViewTripDetailScreen.cs" />
+    <Compile Include="Screens\Trip\EditTripScreen.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="GettingStarted.Xamarin" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
+    <AndroidResource Include="Resources\layout\EditExpense.axml" />
+    <AndroidResource Include="Resources\layout\EditTrip.axml" />
+    <AndroidResource Include="Resources\layout\Home.axml" />
+    <AndroidResource Include="Resources\layout\HomeTripsList.axml" />
+    <AndroidResource Include="Resources\layout\ViewTripDetail.axml" />
+    <AndroidResource Include="Resources\layout\ViewTripDetailExpenseList.axml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml">
@@ -72,6 +106,7 @@
   <ItemGroup>
     <None Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
      Other similar extension points exist, see Microsoft.Common.targets.

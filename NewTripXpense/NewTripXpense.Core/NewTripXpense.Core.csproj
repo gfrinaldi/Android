@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BusinessLogic\TripManager.cs" />
     <Compile Include="DataLayer\TripXmlDatabase.cs" />
     <Compile Include="Model\EntityBase.cs" />
     <Compile Include="Model\Expense.cs" />
